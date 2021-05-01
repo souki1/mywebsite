@@ -1,0 +1,83 @@
+
+/* navbar min screen */
+
+
+
+
+@media (max-width:550px) {
+    .header{
+        min-height:100vh;
+        width: 100%;
+         /* background-image: linear-gradient(to bottom,rgba(12, 12, 12, 0.5),rgba(14, 14, 14, 0.6)),url("../images/background1.jpg");  */
+        background-position: center;
+        
+        background-size: cover;
+      
+    }
+    .close{
+        border :2px solid black;
+   
+        display: block;
+        margin: 10px;
+        cursor: pointer;
+    }
+    .nav-links{
+        display: none;
+    }
+    .images{
+        display: flex;
+    }
+  
+    .menu{
+        display: grid;
+    }
+ .row{
+    color: rgb(240, 215, 215);
+    position: absolute;
+    justify-content: center;
+    display: grid;
+    left: 0%;
+    top: 15%;
+    transform: (-50%,-50%);
+    
+}
+.row p{
+    font-size: 1.5rem;
+} 
+.activate-bar1{
+    display: none;
+}
+.activate-bar{
+   position:absolute;
+   width: 200px;
+   height: 100vh;
+    padding: 15px;
+    margin: 2px;
+   background-color: rgb(209, 194, 194);
+   top: 0%;
+   right: 0%;
+   z-index: 2;
+   transition: ease-in-out .5s;
+}
+ .activate-bar ul li{
+     margin: 5px;
+     position: relative;
+     display: flex;
+     justify-content: center;
+     text-align: center;
+    padding: 25px 0px;
+    align-items: center;
+} 
+}
+
+
+/* navigation end  */
+.card{
+    padding: 5px;
+    display: flex;
+}
+.card h2{
+   font-size: 3rem;
+   justify-content: center;
+   align-items: center;
+}

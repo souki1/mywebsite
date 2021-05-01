@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* nagivation - start */
+.header{
+    min-height:110vh;
+    width: 100%;
+     /* background-image: linear-gradient(to bottom,rgba(12, 12, 12, 0.5),rgba(14, 14, 14, 0.6)),url("../images/background.jpg");  */
+    background-position: center;
+    position: relative;
+    background-color: red;
+    background-size: cover;
+}
+nav{
+    display: flex;
+    /* background-color: red; */
+    /* box-shadow: 0px 2px 2px rgba(12, 12, 12, 0.5); */
+    padding: 1%;
+    justify-content: space-between;
+    align-items: center;
+}
+.img img{
+    border-radius: 50%;
+    width: 70px;
+}
+.menu{
+    display: none;
+}
+.nav-links{
+    flex: 5;
+    text-align: right;
+}
+.nav-links ul li{
+    display: inline-block;
+    position: relative;
+    padding: 1%;
+    word-spacing: 10px;
+
+}
+.nav-links ul li a{
+    float: center;
+    color: white;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+.nav-links ul li:hover{
+    background-color: white;
+    color: black;
+   border-radius: 2%;
+   box-shadow: 1px 2px 15px rgba(129, 91, 118, 0.5);
+    transition: .5s ease-in-out ;
+}
+.nav-links ul li a:hover{
+    color: black;
+    transition: .5s ease-in-out ;
+}
+.close{
+    display: none;
+}
+.nav-links ul li a .active :active{
+    background-color: white;
+    color: transparent;
+   border-radius: 2%;
+   box-shadow: 1px 2px 15px rgba(129, 91, 118, 0.5);
+    transition: .5s ease-in-out ;
+} 
+
+img{
+    cursor: pointer; 
+}
+
+.row{
+    position: relative;
+    justify-content: center;
+    display: grid;
+    margin-top: 15%;
+    color: rgb(201, 187, 187);
+
+}
+
+.row h2{
+
+    text-transform: capitalize;
+    position: relative;
+    display: flex;
+    font-size: 35px;
+    align-items: center;
+    justify-content: center;
+  
+}
+.row p{
+    align-items: center;
+
+    display: flex;
+    font-size: 2rem;
+    padding: 0 50px;
+}
+#i{
+    display: none;
+}
+
