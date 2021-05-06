@@ -10,20 +10,22 @@
 .header{
     min-height:110vh;
     width: 100%;
-      background-image: linear-gradient(to bottom,rgba(12, 12, 12, 0.5),rgba(14, 14, 14, 0.6)),url("../images/background.jpg");  
+    background-image: linear-gradient(to bottom,rgba(12, 12, 12, 0.5),rgba(14, 14, 14, 0.6)),url("../images/background.jpg");  
     background-position: center;
     position: relative;
-    background-color: red;
+
     background-size: cover;
 }
 nav{
     display: flex;
+
     /* background-color: red; */
     /* box-shadow: 0px 2px 2px rgba(12, 12, 12, 0.5); */
     padding: 1%;
     justify-content: space-between;
     align-items: center;
 }
+
 .img img{
     border-radius: 50%;
     width: 70px;
@@ -57,6 +59,10 @@ nav{
    box-shadow: 1px 2px 15px rgba(129, 91, 118, 0.5);
     transition: .5s ease-in-out ;
 }
+.newul{
+background-color: black;
+color: white;
+}
 .nav-links ul li a:hover{
     color: black;
     transition: .5s ease-in-out ;
@@ -64,13 +70,7 @@ nav{
 .close{
     display: none;
 }
-.nav-links ul li a .active :active{
-    background-color: white;
-    color: transparent;
-   border-radius: 2%;
-   box-shadow: 1px 2px 15px rgba(129, 91, 118, 0.5);
-    transition: .5s ease-in-out ;
-} 
+
 
 img{
     cursor: pointer; 
@@ -102,7 +102,42 @@ img{
     font-size: 2rem;
     padding: 0 50px;
 }
-#i{
-    display: none;
+ul li:nth-child(6){
+    border-radius: 50%;
+
 }
 
+ul li:nth-child(6):hover{
+    border-radius: 40%;
+    color: black;
+    background: none;
+align-items: center;
+justify-content: center;
+}
+.sun{
+  justify-content: center;
+  align-items: center;
+}
+.sun::before{
+    content: '\f186';
+    font-family: fontAwesome;
+    font-size: 1.5em;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    color:white;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+.sun:hover{
+   
+    border-radius: 50%;
+}
+.dark .sun::before{
+    content: '\f185';
+}
+.dark .sun {
+background-color: red;
+color: white;
+}
